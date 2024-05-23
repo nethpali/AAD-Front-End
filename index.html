@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Regal Admin</title>
+  <title>Hello Shoes Pvt Lmt</title>
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/feather/feather.css">
   <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
@@ -16,11 +16,12 @@
   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 <body>
+              
 
-  <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+  <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" id="navbar">
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-      <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a>
-      <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+      <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="images\logonew.png" alt="" width=""/></a> -->
+      <a class="navbar-brand brand-logo-mini" href="index.html"><img src="" alt=""/></a>
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
       <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -114,16 +115,10 @@
   <div class="container-fluid page-body-wrapper">
 
     <!--Aside Bar -->
-    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <div class="user-profile">
-        <div class="user-image">
-          <img src="images/faces/face28.png">
-        </div>
         <div class="user-name">
-            Edward Spencer
-        </div>
-        <div class="user-designation">
-            Developer
+            Hello Shoes Pvt Ltd.
         </div>
       </div>
       <ul class="nav">
@@ -140,25 +135,27 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/charts/chartjs.html">
+          <a id="btnSupplierForm"class="nav-link">
             <i class="icon-pie-graph menu-icon"></i>
-            <span class="menu-title">Charts</span>
+            <span class="menu-title">Supplier</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/tables/basic-table.html">
+          <a id="btnCustomerForm"class="nav-link" >
             <i class="icon-command menu-icon"></i>
-            <span class="menu-title">Tables</span>
+            <span class="menu-title">Customer</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pages/icons/feather-icons.html">
-            <i class="icon-help menu-icon"></i>
-            <span class="menu-title">Icons</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+
+<!--        <li class="nav-item">-->
+<!--          <a  id="btnUserForm" class="nav-link" >-->
+<!--            <i class="icon-help menu-icon"></i>-->
+<!--            <span class="menu-title">User</span>-->
+<!--          </a>-->
+<!--        </li> -->
+
+        <!-- <li class="nav-item">
+          <a id="btnUserForm "class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
             <i class="icon-head menu-icon"></i>
             <span class="menu-title">User Pages</span>
             <i class="menu-arrow"></i>
@@ -169,11 +166,26 @@
               <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
             </ul>
           </div>
+        </li> -->
+
+       <li class="nav-item">
+          <a  id="btnInventoryForm" class="nav-link" >
+            <i class="icon-help menu-icon"></i>
+            <span class="menu-title">Inventory</span>
+          </a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="docs/documentation.html">
+          <a id="btnSalesForm"class="nav-link" >
             <i class="icon-book menu-icon"></i>
-            <span class="menu-title">Documentation</span>
+            <span class="menu-title">Sales</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a id="btnSignOut"class="nav-link" >
+            <i class="icon-book menu-icon"></i>
+            <span class="menu-title">SignOut</span>
           </a>
         </li>
       </ul>
@@ -693,520 +705,1089 @@
     </footer>
     </div>
 
+   <!--Supplier -->
+   <div id="supplierForm" class="main-panel">
+    <div class="card">
+      <div class="card-body">
+        <form class="form-sample">
+          <p class="card-description">
+                Supplier Form
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Supplier Code</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Supplier Name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Category</label>
+                <div class="col-sm-9">
+                  <select class="form-control" >
+                    <option>International</option>
+                    <option>Local</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Address 1</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Address 2</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Address 3</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Address 4</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Address 5</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Address 6</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Contact No_01</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Contact No_02</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="template-demo">
+      <button type="button" class="btn btn-primary">submit</button>
+      <button type="button" class="btn btn-secondary">update</button>
+      <button type="button" class="btn btn-success">Reset</button>
+    </div>
+
+    <div class="col-lg-12 stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Supplier Form</h4>
+          <div class="table-responsive pt-3">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>
+                    Supplier Code
+                  </th>
+                  <th>
+                    Supplier Name
+                  </th>
+                  <th>
+                    Category
+                  </th>
+
+                  <th>
+                   Address
+                  </th>
+                  <th>
+                   contact No_01
+                  </th>
+                  <th>
+                    contact No_02
+                   </th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © nethpalijayaweera.com 2020</span>
+            </div>
+          </footer>
+  </div>
+      
     <!--Employee -->
     <div id="employeeForm" class="main-panel">
-      <div class="content-wrapper">
-        <div class="row">
-          <div class="col-sm-12 mb-4 mb-xl-0">
-            <h4 class="font-weight-bold text-dark">Hi, welcome back!</h4>
-            <p class="font-weight-normal mb-2 text-muted">APRIL 1, 2019</p>
+      <div class="col-12 grid-margin">
+        <div class="card">
+          <div class="card-body">
+            <form class="form-sample">
+              <p class="card-description">
+                    Employee Form
+              </p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Employee Code</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Employee Name</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <div class="col-sm-9 me-7">
+                      <input id="pic" type="file" class="form-control" onchange="imageUploaded()">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Gender</label>
+                    <div class="col-sm-9">
+                      <div class="col-sm-9">
+                        <select class="form-control">
+                           <option>Female</option>
+                           <option>Male</option>
+                        </select>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Status</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Designation</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Role</label>
+                        <div class="col-sm-9">
+                            <select class="form-control">
+                               <option>USER</option>
+                               <option>ADMIN</option>
+                            </select>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Date of Birthday</label>
+                    <div class="col-sm-9">
+                      <input class="form-control" type="date" placeholder="dd/mm/yyyy"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Date</label>
+                    <div class="col-sm-9">
+                      <input class="form-control" type="date" placeholder="dd/mm/yyyy"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Attached Branch</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 1</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 2</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 3</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 4</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Adress 5</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Contact No</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">In case Of Emergency</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Emergency Contact_No</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Password</label>
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label"> Re Enter Password</label>
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-xl-3 flex-column d-flex grid-margin stretch-card">
-            <div class="row flex-grow">
-              <div class="col-sm-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Customers</h4>
-                        <p>23% increase in conversion</p>
-                        <h4 class="text-dark font-weight-bold mb-2">43,981</h4>
-                        <canvas id="customers"></canvas>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-sm-12 stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Orders</h4>
-                        <p>6% decrease in earnings</p>
-                        <h4 class="text-dark font-weight-bold mb-2">55,543</h4>
-                        <canvas id="orders"></canvas>
-                    </div>
-                  </div>
-             </div>
-            </div>
-          </div>
-          <div class="col-xl-9 d-flex grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Website Audience Metrics</h4>
-                    <div class="row">
-                      <div class="col-lg-5">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit amet cumque cupiditate</p>
-                      </div>
-                      <div class="col-lg-7">
-                        <div class="chart-legends d-lg-block d-none" id="chart-legends"></div>
-                      </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <canvas id="web-audience-metrics-satacked" class="mt-3"></canvas>
-                        </div>
-                    </div> 
-                  </div>
-                </div>
+      </div>
+     <div class="template-demo">
+      <button type="button" class="btn btn-primary">submit</button>
+      <button type="button" class="btn btn-secondary">update</button>
+      <button type="button" class="btn btn-success">Reset</button>
+    </div>
+
+    <div class="col-lg-12 stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Employee Form</h4>
+          <div class="table-responsive pt-3">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>
+                    Employee Code
+                  </th>
+                  <th>
+                    Employee Name
+                  </th>
+                  <th>
+                  Profile Pic
+                  </th>
+                  <th>
+                    Gender
+                  </th>
+                  <th>
+                    Status
+                  </th>
+                  <th>
+                    Designation
+                   </th>
+                   <th>
+                    Role
+                   </th>
+                   <th>
+                    DOB
+                   </th>
+                   <th>
+                    Date
+                   </th>
+                   <th>
+                    Branch
+                   </th>
+                   <th>
+                    Contact No
+                   </th>
+                   <th>
+                    Email
+                   </th>
+                   <th>
+                    In case of Emegency
+                   </th>
+                   <th>
+                    Emgergancy Contact_No
+                   </th>
+                   <th>
+                    Password
+                   </th>
+                   <th>
+                    Re -Enter Password
+                   </th>
+                  </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="row">
-            <div class="col-xl-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between mb-3">
-                        <h4 class="card-title">Market Trends</h4>
-                        <div class="dropdown">
-                            <button class="btn btn-sm dropdown-toggle text-dark pt-0 pr-0" type="button" id="dropdownMenuSizeButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                This week
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuSizeButton3">
-                              <h6 class="dropdown-header">This week</h6>
-                              <h6 class="dropdown-header">This month</h6>
-                            </div>
-                          </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="d-sm-flex justify-content-center justify-content-sm-between">
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © nethpalijayaweera.com 2020</span>
+      </div>
+    </footer>
+  </div>
+
+
+  <!--Customer -->
+    <div id="customerForm" class="main-panel">
+      <div class="col-12 grid-margin">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-description">
+              Customer Form
+            </p>
+            <form class="form-sample">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Customer Name</label>
+                    <div class="col-sm-9">
+                      <input type="text" id="customerName" name="code" class="form-control" />
                     </div>
-                    <div id="chart-legends-market-trend" class="chart-legends mt-1">
-                    </div>
-                    <div class="row mt-2 mb-2">
-                      <div class="col-6">
-                        <div class="text-small"><span class="text-success">18.2%</span> higher </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="text-small"><span class="text-danger">0.7%</span> higher </div>
-                      </div>
-                    </div>
-                    <div class="marketTrends mt-4">
-                      <canvas id="marketTrendssatacked"></canvas>
-                    </div>
-                      
                   </div>
                 </div>
-            </div>
-            <div class="col-xl-4 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Traffic Sources</h4>
-                  <div class="row">
-                    <div class="col-sm-12">
-                        <div class="d-flex justify-content-between mt-2 text-dark mb-2">
-                            <div><span class="font-weight-bold">4453</span> Leads</div>
-                            <div>Goal: 2000</div>
-                          </div>
-                      <div class="progress progress-md grouped mb-2">
-                        <div class="progress-bar  bg-danger" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar  bg-primary" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-light" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Gender</label>
+                    <div class="col-sm-9" id="cusGender">
+                      <label class="me-3 mb-1"><input type="radio" value="MALE" name="gender" required> <span>Male</span></label>
+                      <label class="mb-0"><input type="radio" value="FEMALE" name="gender" required> <span>Female</span></label>
                     </div>
-                    <div class="col-sm-12">
-                      <div class="traffic-source-legend">
-                        <div class="d-flex justify-content-between mb-1 mt-2">
-                          <div class="font-weight-bold">SOURCE</div>
-                          <div class="font-weight-bold">TOTAL</div>
-                        </div>
-                        <div class="d-flex justify-content-between legend-label">
-                          <div><span class="bg-danger"></span>Google Search</div>
-                          <div>30%</div>
-                        </div>
-                        <div class="d-flex justify-content-between legend-label">
-                          <div><span class="bg-info"></span>Social Media</div>
-                          <div>20%</div>
-                        </div>
-                        <div class="d-flex justify-content-between legend-label">
-                          <div><span class="bg-primary"></span>Referrals</div>
-                          <div>10%</div>
-                        </div>
-                        <div class="d-flex justify-content-between legend-label">
-                          <div><span class="bg-warning"></span>Organic Traffic</div>
-                          <div>10%</div>
-                        </div>
-                        <div class="d-flex justify-content-between legend-label">
-                          <div><span class="bg-success"></span>Google Search</div>
-                          <div>5%</div>
-                        </div>
-                        <div class="d-flex justify-content-between legend-label">
-                          <div><span class="bg-light"></span>Email Marketing</div>
-                          <div>25%</div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </div>  
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title mb-3">Recent Activity</h4>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="text-dark">
-                        <div class="d-flex pb-3 border-bottom justify-content-between">
-                          <div class="mr-3"><i class="mdi mdi-signal-cellular-outline icon-md"></i></div>
-                          <div class="font-weight-bold mr-sm-4">
-                            <div>Deposit has updated to Paid</div>
-                            <div class="text-muted font-weight-normal mt-1">32 Minutes Ago</div>
-                          </div>
-                          <div><h6 class="font-weight-bold text-info ml-sm-2">$325</h6></div>
-                        </div>
-                        <div class="d-flex pb-3 pt-3 border-bottom justify-content-between">
-                          <div class="mr-3"><i class="mdi mdi-signal-cellular-outline icon-md"></i></div>
-                          <div class="font-weight-bold mr-sm-4">
-                            <div>Your Withdrawal Proceeded</div>
-                            <div class="text-muted font-weight-normal mt-1">45 Minutes Ago</div>
-                          </div>
-                          <div><h6 class="font-weight-bold text-info ml-sm-2">$4987</h6></div>
-                        </div>
-                        <div class="d-flex pb-3 pt-3 border-bottom justify-content-between">
-                          <div class="mr-3"><i class="mdi mdi-signal-cellular-outline icon-md"></i></div>
-                          <div class="font-weight-bold mr-sm-4">
-                            <div>Deposit has updated to Paid                              </div>
-                            <div class="text-muted font-weight-normal mt-1">1 Days Ago</div>
-                          </div>
-                          <div><h6 class="font-weight-bold text-info ml-sm-2">$5391</h6></div>
-                        </div>
-                        <div class="d-flex pt-3 justify-content-between">
-                          <div class="mr-3"><i class="mdi mdi-signal-cellular-outline icon-md"></i></div>
-                          <div class="font-weight-bold mr-sm-4">
-                            <div>Deposit has updated to Paid</div>
-                            <div class="text-muted font-weight-normal mt-1">3 weeks Ago</div>
-                          </div>
-                          <div><h6 class="font-weight-bold text-info ml-sm-2">$264</h6></div>
-                        </div> 
-                      </div>
-                    </div>
-                  </div>  
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-9 grid-margin-lg-0 grid-margin stretch-card">
-            <div class="card">
-              <div class="card-body">
-                  <h4 class="card-title">Top Sellers</h4>
-                  <div class="table-responsive mt-3">
-                    <table class="table table-header-bg">
-                      <thead>
-                        <tr>
-                          <th>
-                              Country
-                          </th>
-                          <th>
-                              Revenue
-                          </th>
-                          <th>
-                              Vs Last Month
-                          </th>
-                          <th>
-                              Goal Reached
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <i class="flag-icon flag-icon-us mr-2" title="us" id="us"></i> United States 
-                          </td>
-                          <td>
-                            $911,200
-                          </td>
-                          <td>
-                            <div class="text-success"><i class="icon-arrow-up mr-2"></i>+60%</div>
-                          </td>
-                          <td>
-                            <div class="row">
-                              <div class="col-sm-10">
-                                <div class="progress">
-                                  <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                              </div>
-                              <div class="col-sm-2">
-                                25%
-                              </div>
-                            </div>
-                          </td>
-                          
-                        </tr>
-                        <tr>
-                          <td>
-                            <i class="flag-icon flag-icon-at mr-2" title="us" id="at"></i> Austria
-                          </td>
-                          <td>
-                              $821,600
-                          </td>
-                          <td>
-                            <div class="text-danger"><i class="icon-arrow-down mr-2"></i>-40%</div>
-                          </td>
-                          <td>
-                            <div class="row">
-                              <div class="col-sm-10">
-                                <div class="progress">
-                                  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                              </div>
-                              <div class="col-sm-2">
-                                50%
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <i class="flag-icon flag-icon-fr mr-2" title="us" id="fr"></i> France
-                          </td>
-                          <td>
-                              $323,700
-                          </td>
-                          <td>
-                            <div class="text-success"><i class="icon-arrow-up mr-2"></i>+40%</div>
-                          </td>
-                          <td>
-                            <div class="row">
-                              <div class="col-sm-10">
-                                <div class="progress">
-                                  <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                              </div>
-                              <div class="col-sm-2">
-                                10%
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <i class="flag-icon flag-icon-de mr-2" title="us" id="de"></i> Germany
-                          </td>
-                          <td>
-                              $833,205
-                          </td>
-                          <td>
-                            <div class="text-danger"><i class="icon-arrow-down mr-2"></i>-80%</div>
-                          </td>
-                          <td>
-                            <div class="row">
-                              <div class="col-sm-10">
-                                <div class="progress">
-                                  <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                              </div>
-                              <div class="col-sm-2">
-                                70%
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="pb-0">
-                            <i class="flag-icon flag-icon-ae mr-2" title="ae" id="ae"></i> united arab emirates
-                          </td>
-                          <td class="pb-0">
-                              $232,243
-                          </td>
-                          <td class="pb-0">
-                            <div class="text-success"><i class="icon-arrow-up mr-2"></i>+80%</div>
-                          </td>
-                          <td class="pb-0">
-                            <div class="row">
-                              <div class="col-sm-10">
-                                <div class="progress">
-                                  <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                              </div>
-                              <div class="col-sm-2">
-                                0%
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        
-                      </tbody>
-                    </table>
                   </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-3 grid-margin-lg-0 grid-margin stretch-card">
-            <div class="card">
-              <div class="card-body">
-                  <h4 class="card-title mb-3">Overall rating</h4>
-                  <div class="d-flex">
-                    <div>
-                        <h4 class="text-dark font-weight-bold mb-2 mr-2">4.3</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Join Date</label>
+                    <div class="col-sm-9">
+                      <input class="form-control"  id="cusJoinDate"  type="date" placeholder="dd/mm/yyyy"/>
                     </div>
-                    <div>
-                      <select id="over-all-rating" name="rating" autocomplete="off">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">level</label>
+                    <div class="col-sm-9">
+                      <select class="form-control">
+                        <option>Gold</option>
+                        <option>Bronze</option>
+                        <option>Silver</option>
                       </select>
                     </div>
                   </div>
-                  <p class="mb-4">Based on 186 reviews</p>
-                  <div class="row">
-                    <div class="col-sm-2 pr-0">
-                        <div class="d-flex">
-                          <div>
-                              <div class="text-dark font-weight-bold mb-2 mr-2">5</div>
-                          </div>
-                          <div>
-                            <i class="fa fa-star text-warning"></i>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-9 pl-2">
-                        <div class="row">
-                          <div class="col-sm-10">
-                            <div class="progress progress-lg mt-1">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </div>
-                          <div class="col-sm-2 p-lg-0">
-                            80%
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="row mt-2">
-                    <div class="col-sm-2 pr-0">
-                        <div class="d-flex">
-                          <div>
-                              <div class="text-dark font-weight-bold mb-2 mr-2">4</div>
-                          </div>
-                          <div>
-                            <i class="fa fa-star text-warning"></i>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-9 pl-2">
-                        <div class="row">
-                          <div class="col-sm-10">
-                            <div class="progress progress-lg mt-1">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </div>
-                          <div class="col-sm-2 p-lg-0">
-                            45%
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="row mt-2">
-                    <div class="col-sm-2 pr-0">
-                        <div class="d-flex">
-                          <div>
-                              <div class="text-dark font-weight-bold mb-2 mr-2">3</div>
-                          </div>
-                          <div>
-                            <i class="fa fa-star text-warning"></i>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-9 pl-2">
-                        <div class="row">
-                          <div class="col-sm-10">
-                            <div class="progress progress-lg mt-1">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </div>
-                          <div class="col-sm-2 p-lg-0">
-                            30%
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="row mt-2">
-                    <div class="col-sm-2 pr-0">
-                        <div class="d-flex">
-                          <div>
-                              <div class="text-dark font-weight-bold mb-2 mr-2">2</div>
-                          </div>
-                          <div>
-                            <i class="fa fa-star text-warning"></i>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-9 pl-2">
-                        <div class="row">
-                          <div class="col-sm-10">
-                            <div class="progress progress-lg mt-1">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 8%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </div>
-                          <div class="col-sm-2 p-lg-0">
-                            8%
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="row mt-2">
-                    <div class="col-sm-2 pr-0">
-                        <div class="d-flex">
-                          <div>
-                              <div class="text-dark font-weight-bold mb-2 mr-2">5</div>
-                          </div>
-                          <div>
-                            <i class="fa fa-star text-warning"></i>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-9 pl-2">
-                        <div class="row">
-                          <div class="col-sm-10">
-                            <div class="progress progress-lg mt-1">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 1%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </div>
-                          <div class="col-sm-2 p-lg-0">
-                            1%
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <p class="mb-2 mt-3 mb-3 text-dark font-weight-bold">Rating by category</p>
-                      <div class="d-flex">
-                          <div>
-                              <div class="text-dark font-weight-bold mb-2 mr-2">4.3</div>
-                          </div>
-                          <div class="mr-2">
-                            <i class="fa fa-star text-warning"></i>
-                          </div>
-                          <div><p>Work/Management</p></div>
-                        </div>
-                        <div class="d-flex">
-                            <div>
-                                <div class="text-dark font-weight-bold mb-2 mr-2">3.5</div>
-                            </div>
-                            <div class="mr-2">
-                              <i class="fa fa-star text-warning"></i>
-                            </div>
-                            <div><p>Salary/Culture</p></div>
-                          </div>
-                    </div>
-                  </div>
-  
+                </div>
               </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Total Point</label>
+                    <div class="col-sm-9">
+                      <input name="cutTotalPoint" type="number" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Date Of Birthday</label>
+                    <div class="col-sm-9">
+                      <input class="form-control" id="cusDob" type="date" placeholder="dd/mm/yyyy"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 1</label>
+                    <div class="col-sm-9">
+                      <input  name="address1" type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 2</label>
+                    <div class="col-sm-9">
+                      <input  name="address2" type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 3</label>
+                    <div class="col-sm-9">
+                      <input name="address3" type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 4</label>
+                    <div class="col-sm-9">
+                      <input  name="address4" type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 5</label>
+                    <div class="col-sm-9">
+                      <input name="address5" type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                      <input name="email" type="text" class="form-control" id="cusEmail"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Contact No</label>
+                    <div class="col-sm-9">
+                      <input name="contactN0" type="text" class="form-control" id="cusContactNo"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Purchase Date</label>
+                    <div class="col-sm-9">
+                      <input class="form-control" type="date" placeholder="dd/mm/yyyy " id="purchase_date_and_time"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="template-demo">
+        <button type="button" class="btn btn-primary" id="btnCusSave">submit</button>
+        <button type="button" class="btn btn-secondary">update</button>
+        <button type="button" class="btn btn-success">Reset</button>
+      </div>
+
+      <div class="col-lg-12 stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Customer Table</h4>
+            <div class="table-responsive pt-3">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th >Customer Code</th>
+                    <th > Customer Name</th>
+                    <th>Gender</th>
+                    <th>Join Date</th>
+                    <th>Level</th>
+                    <th>Total Point</th>
+                     <th>DOB</th>
+                     <th>Email</th>
+                     <th>Purchase Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="d-sm-flex justify-content-center justify-content-sm-between">
-          <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
-        </div>
-        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block mt-2">Distributed By: <a href="https://www.themewagon.com/" target="_blank">ThemeWagon</a></span> 
-      </footer>
+     <footer class="footer">
+      <div class="d-sm-flex justify-content-center justify-content-sm-between">
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © nethpalijayaweera.com 2020</span>
       </div>
-  </div>
+    </footer>
+   </div>
+
+   
+    <!--inventory -->
+    <div id="inventoryForm" class="main-panel">
+      <div class="col-12 grid-margin">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-description">
+              Inventory Form
+        </p>
+            <form class="form-sample">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Customer Code</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Customer Name</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Gender</label>
+                    <div class="col-sm-9">
+                      <select class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Join Date</label>
+                    <div class="col-sm-9">
+                      <input class="form-control" type="date" placeholder="dd/mm/yyyy"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">level</label>
+                    <div class="col-sm-9">
+                      <select class="form-control">
+                        <option>Gold</option>
+                        <option>Bronze</option>
+                        <option>Silver</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Total Point</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Date Of Birthday</label>
+                    <div class="col-sm-9">
+                      <input class="form-control" type="date" placeholder="dd/mm/yyyy"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 1</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 2</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 3</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 4</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 5</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Purchase Date</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" type="date" placeholder="dd/mm/yyyy"/>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="template-demo">
+        <button type="button" class="btn btn-primary">submit</button>
+        <button type="button" class="btn btn-secondary">update</button>
+        <button type="button" class="btn btn-success">Reset</button>
+      </div>
+  
+      <div class="col-lg-12 stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Supplier Form</h4>
+            <div class="table-responsive pt-3">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>
+                      Customer Code
+                    </th>
+                    <th>
+                      Customer Name
+                    </th>
+                    <th>
+                      Gender
+                    </th>
+                    <th>
+                        Join Date
+                    </th>
+                    <th>
+                     Level
+                    </th>
+                    <th>
+                      Total Point
+                     </th>
+                     <th>
+                       DOB
+                     </th>
+                     <th>
+                      Email
+                     </th>
+                     <th>
+                      Purchase Date
+                     </th>
+                     
+                  </tr>
+                </thead>
+                <tbody>
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+     <footer class="footer">
+      <div class="d-sm-flex justify-content-center justify-content-sm-between">
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © nethpalijayaweera.com 2020</span>
+      </div>
+    </footer>
+    </div>
+
+
+    <!--sales -->
+    <div id="salesForm" class="main-panel">
+      <div class="col-12 grid-margin">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-description">
+              Sales Form
+            </p>
+            <form class="form-sample">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Customer Code</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Customer Name</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Gender</label>
+                    <div class="col-sm-9">
+                      <select class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Join Date</label>
+                    <div class="col-sm-9">
+                      <input class="form-control" type="date" placeholder="dd/mm/yyyy"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">level</label>
+                    <div class="col-sm-9">
+                      <select class="form-control">
+                        <option>Gold</option>
+                        <option>Bronze</option>
+                        <option>Silver</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Total Point</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Date Of Birthday</label>
+                    <div class="col-sm-9">
+                      <input class="form-control" type="date" placeholder="dd/mm/yyyy"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 1</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 2</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 3</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 4</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Address 5</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Purchase Date</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" type="date" placeholder="dd/mm/yyyy"/>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="template-demo">
+        <button type="button" class="btn btn-primary">submit</button>
+        <button type="button" class="btn btn-secondary">update</button>
+        <button type="button" class="btn btn-success">Reset</button>
+      </div>
+  
+      <div class="col-lg-12 stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Supplier Form</h4>
+            <div class="table-responsive pt-3">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>
+                      Customer Code
+                    </th>
+                    <th>
+                      Customer Name
+                    </th>
+                    <th>
+                      Gender
+                    </th>
+                    <th>
+                        Join Date
+                    </th>
+                    <th>
+                     Level
+                    </th>
+                    <th>
+                      Total Point
+                     </th>
+                     <th>
+                       DOB
+                     </th>
+                     <th>
+                      Email
+                     </th>
+                     <th>
+                      Purchase Date
+                     </th>
+                     
+                  </tr>
+                </thead>
+                <tbody>
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+     <footer class="footer">
+      <div class="d-sm-flex justify-content-center justify-content-sm-between">
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © nethpalijayaweera.com 2020</span>
+      </div>
+    </footer>
+    </div>
+
+
+    <!--Sign In-->
+    <div class="main" id="signInForm">
+      <div class="signIn" >
+        <form class="sign-in-form">
+          <h2>Sign In</h2>
+          <div class="mainForm">
+            <input type="email" id="email" placeholder="Email" name="email" required>
+          </div>
+          <div class="mainForm">
+            <input type="password" id="password" placeholder="Password" name="password" required>
+          </div>
+          <button id="btnSignIn" type="button">Sign In</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
 
   <script src="vendors/base/vendor.bundle.base.js"></script>
 
@@ -1219,24 +1800,46 @@
 
   <script src="js/dashboard.js"></script>
   <script src="/partials/lib/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="/Controller/Navigation.js"></script>
+  <script type="module" src="/Controller/SignIn.js"></script>
+  <script type="module" src="/Controller/CustomerController.js"></script>
 
   <script>
+
+    // $(document).ready(function(){
+    //   $("#dashBoardForm").css('display','block');
+    // })
+
     $("#dashBoardForm").css('display','none');
     $("#employeeForm").css('display','none');
+    $("#supplierForm").css('display','none');
+    $("#customerForm").css('display','none');
+    $("#inventoryForm").css('display','none');
+    $("#salesForm").css('display','none');
+    $("#sidebar").css('display','none');
+    $("#navbar").css('display','none');
+
+
   </script>
+
+    </div>
+  </div>
+
+
 
   <script>
-    $("#btnDashboardForm").on('click',()=>{
-      $("#dashBoardForm").css('display','block');
-      $("#employeeForm").css('display','none');
-    })
+    // $("#userForm").css('display','block');
+    $("#dashBoardForm").css('display','none');
+    $("#employeeForm").css('display','none');
+    $("#supplierForm").css('display','none');
+    $("#customerForm").css('display','none');
+    $("#inventoryForm").css('display','none');
+    $("#salesForm").css('display','none');
+    $("#sidebar").css('display','none');
+    $("#navbar").css('display','none');
 
-    $("#btnEmployeeForm").on('click',()=>{
-      $("#dashBoardForm").css('display','none');
-      $("#employeeForm").css('display','block');
-    })
   </script>
 </body>
-
 </html>
 
