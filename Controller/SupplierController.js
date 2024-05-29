@@ -206,26 +206,26 @@ $("#btnSupSave").on('click', () => {
 //     });
 // }
 
-// $("#btnSupReset").on("click", () => {
-//     resetField()
-// })
-// const resetField = () => {
-//     $("#btnSupSave").prop("disabled", false)
-//     $("#btnSupUpdate").prop("disabled", true)
-//
-//
-//     $("#supplier_name").val("")
-//     $("select[name='category']").val("");
-//     $("input[name='address01']").val("")
-//     $("input[name='address02']").val("")
-//     $("input[name='address03']").val("")
-//     $("input[name='address04']").val("")
-//     $("input[name='address05']").val("")
-//     $("input[name='address06']").val("")
-//     $("#contact_no_01").val("")
-//     $("#contact_no_02").val("")
-//     $("#supplier_email").val("")
-// }
+$("#btnSupReset").on("click", () => {
+    resetField()
+})
+const resetField = () => {
+    $("#btnSupSave").prop("disabled", false)
+    $("#btnSupUpdate").prop("disabled", true)
+
+
+    $("#supplier_name").val("")
+    $("select[name='category']").val("");
+    $("input[name='address01']").val("")
+    $("input[name='address02']").val("")
+    $("input[name='address03']").val("")
+    $("input[name='address04']").val("")
+    $("input[name='address05']").val("")
+    $("input[name='address06']").val("")
+    $("#contact_no_01").val("")
+    $("#contact_no_02").val("")
+    $("#supplier_email").val("")
+}
 
 //set value to the table
 // const setValue = (response) => {
